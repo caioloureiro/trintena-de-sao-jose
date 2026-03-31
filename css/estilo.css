@@ -136,8 +136,9 @@ footer {
 .sao-jose {
 	background-image: url("img/sao-jose.webp");
 	background-size: contain;
+	background-position: center center;
 	background-repeat: no-repeat;
-	width: 15vw;
+	width: 100%;
 	height: 20vw;
 	margin: 2vw auto;
 	display: table;

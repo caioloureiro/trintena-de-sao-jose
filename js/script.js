@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	const btnTrintena = document.querySelector(".comecar-trintena");
 	const counter = document.querySelector(".counter");
 
+	// Esconde o botão .comecar-trintena se o cookie existir
+	if (btnTrintena && getCookie("trintena_inicio")) {
+		btnTrintena.style.display = "none";
+	}
+
 	// Funções para cookie
 	function setCookie(name, value, days) {
 		const d = new Date();
