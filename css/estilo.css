@@ -1,0 +1,200 @@
+/* Start - css/estilo.css */
+:root {
+	--karazan-bordo: #2d1a2e;
+	--karazan-cream: #f5f3e7;
+	--karazan-toolbar-bg: #1a1020;
+	--karazan-toolbar-inner: #231326;
+	--karazan-toolbar-border: #3a2340;
+	--karazan-toolbar-shadow: rgba(0, 0, 0, 0.1);
+	--karazan-footer-bg: #1a1020;
+	--ibarra: "Ibarra Real Nova", serif;
+	--segoe: "Segoe UI", sans-serif;
+	--fontSizeTitulo: 3vw;
+	--lineHeightTitulo: 2vw;
+	--fontSizeTexto: 1.3vw;
+	--lineHeightTexto: 2vw;
+	--fontSizeBtn: 1.3vw;
+	--lineHeightBtn: 2vw;
+}
+body {
+	background-color: var(--karazan-bordo);
+	color: var(--karazan-cream);
+	font-family: var(--segoe);
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: var(--ibarra);
+	font-size: var(--fontSizeTitulo);
+	line-height: var(--lineHeightTitulo);
+	margin: 0;
+}
+header {
+	background-color: black;
+	color: var(--karazan-cream);
+	padding: 2vw 0;
+	text-align: center;
+}
+h1 {
+	font-family: var(--ibarra);
+	font-size: var(--fontSizeTitulo);
+	line-height: var(--lineHeightTitulo);
+	margin: 0;
+}
+main {
+	width: 90vw;
+	max-width: 60vw;
+	margin: 4vw auto;
+	background-color: var(--karazan-toolbar-inner);
+	border-radius: 1vw;
+	padding: 3vw;
+	box-sizing: border-box;
+	display: block;
+}
+p {
+	font-size: var(--fontSizeTexto);
+	line-height: var(--lineHeightTexto);
+	margin-bottom: 2vw;
+}
+.btn {
+	display: inline-block;
+	background-color: var(--karazan-cream);
+	color: black;
+	font-size: var(--fontSizeBtn);
+	line-height: var(--lineHeightBtn);
+	padding: 1vw 3vw;
+	border: none;
+	border-radius: 0.5vw;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+.btn:hover {
+	background-color: white;
+	color: var(--karazan-bordo);
+}
+footer {
+	clear: both;
+	background-color: var(--karazan-footer-bg);
+	color: var(--karazan-cream);
+	text-align: center;
+	padding: 2vw 0;
+	font-size: 1vw;
+}
+.barra-de-ferramentas {
+	background: var(--karazan-toolbar-bg);
+	border-radius: 0.8vw;
+	padding: 1.5vw 2vw;
+	display: flex;
+	align-items: center;
+	gap: 1vw;
+	margin: 2vw 0 0 0;
+	box-shadow: 0 0.26vw 1vw 0 var(--karazan-toolbar-shadow);
+}
+.barra-de-ferramentas label {
+	color: var(--karazan-cream);
+	font-size: 1.3vw;
+	margin-right: 0.7vw;
+}
+.barra-de-ferramentas select {
+	background: var(--karazan-bordo);
+	color: var(--karazan-cream);
+	border: 0.13vw solid var(--karazan-toolbar-border);
+	border-radius: 0.5vw;
+	padding: 0.7vw 1.5vw;
+	font-size: 1.3vw;
+}
+.barra-de-ferramentas button {
+	background: var(--karazan-cream);
+	color: black;
+	border: none;
+	border-radius: 0.5vw;
+	padding: 0.7vw 2vw;
+	font-size: 1.3vw;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.barra-de-ferramentas button:hover {
+	background: white;
+	color: var(--karazan-bordo);
+}
+.sao-jose {
+	background-image: url("img/sao-jose.webp");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 15vw;
+	height: 20vw;
+	margin: 2vw auto;
+	display: table;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	:root {
+		--fontSizeTitulo: 15vw;
+		--lineHeightTitulo: 20vw;
+		--fontSizeTexto: 4vw;
+		--lineHeightTexto: 6vw;
+		--fontSizeBtn: 4vw;
+		--lineHeightBtn: 6vw;
+	}
+	header {
+		padding: 6vw 0;
+	}
+	main {
+		width: 90vw;
+		max-width: 90vw;
+		margin: 12vw auto;
+		border-radius: 3vw;
+		padding: 9vw;
+	}
+	p {
+		margin-bottom: 6vw;
+	}
+	.btn {
+		padding: 3vw 9vw;
+		border-radius: 1.5vw;
+	}
+	footer {
+		padding: 6vw 0;
+		font-size: 5vw;
+	}
+	.barra-de-ferramentas {
+		border-radius: 3vw;
+		padding: 9vw;
+		gap: 0vw;
+		margin: 6vw 0 0 0;
+		box-shadow: 0 1vw 3vw 0 var(--karazan-toolbar-shadow);
+		display: table;
+		height: auto;
+	}
+	.barra-de-ferramentas label {
+		font-size: 5vw;
+		margin-right: 2.5vw;
+		margin-bottom: 4vw;
+		width: 100%;
+		float: left;
+	}
+	.barra-de-ferramentas select {
+		border-radius: 1.5vw;
+		padding: 3vw 6vw;
+		font-size: 5vw;
+		width: 100%;
+		height: 15vw;
+		float: left;
+		margin-bottom: 4vw;
+	}
+	.barra-de-ferramentas button {
+		border-radius: 1.5vw;
+		padding: 3vw 6vw;
+		font-size: 5vw;
+		width: 100%;
+		height: 15vw;
+		float: left;
+	}
+	.sao-jose {
+		width: 45vw;
+		height: 60vw;
+		margin: 6vw auto;
+	}
+}
+/* End - css/estilo.css */
