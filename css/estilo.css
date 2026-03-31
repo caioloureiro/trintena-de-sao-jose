@@ -16,6 +16,10 @@
 	--fontSizeBtn: 1.3vw;
 	--lineHeightBtn: 2vw;
 }
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
 body {
 	background-color: var(--karazan-bordo);
 	color: var(--karazan-cream);
@@ -57,7 +61,6 @@ p {
 	margin-bottom: 2vw;
 }
 .btn {
-	display: inline-block;
 	background-color: var(--karazan-cream);
 	color: black;
 	font-size: var(--fontSizeBtn);
@@ -68,10 +71,22 @@ p {
 	cursor: pointer;
 	text-decoration: none;
 	transition: background 0.2s;
+	float: left;
+	margin-right: 2vw;
 }
 .btn:hover {
 	background-color: white;
 	color: var(--karazan-bordo);
+}
+.counter {
+	font-size: 1.5vw;
+	color: var(--karazan-cream);
+	text-align: center;
+	margin-bottom: 2vw;
+	float: left;
+	width: 17vw;
+	height: 4vw;
+	line-height: 4vw;
 }
 footer {
 	clear: both;
@@ -151,8 +166,20 @@ footer {
 		margin-bottom: 6vw;
 	}
 	.btn {
-		padding: 3vw 9vw;
+		padding: 0;
 		border-radius: 1.5vw;
+		width: 100%;
+		height: 15vw;
+		line-height: 15vw;
+		margin-bottom: 6vw;
+		text-align: center;
+	}
+	.counter {
+		font-size: 5vw;
+		margin-bottom: 6vw;
+		width: 100%;
+		height: 15vw;
+		line-height: 15vw;
 	}
 	footer {
 		padding: 6vw 0;

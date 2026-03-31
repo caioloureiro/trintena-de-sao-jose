@@ -70,6 +70,8 @@ $head_favicon = "https://www.digitalmd.com.br/caioloureiro/trintena-de-sao-jose/
 	</header>
 	<main>
 		<a href="#" class="btn">Selecionar Texto</a>
+		<a href="#" class="btn comecar-trintena">Começar Trintena</a>
+		<div class="counter">Dia da trintena: 0</div>
 		<div class="sao-jose"></div>
 		<p>Bem-vindo à Trintena de São José. Este site é dedicado à devoção e oração durante os 30 dias em honra a São José.</p>
 		<div class="leitura">
